@@ -16,7 +16,7 @@ Navigate to your app and simply enter one of the following commands into the com
 Make sure you install the following dependencies and create a Spotify Developer account.
 
 ```
-* <details> 
+<details> 
     <summary>[node-spotify-api](https://www.npmjs.com/package/node-spotify-api)</summary>
 
    <p>* The Spotify API requires you sign up as a developer to generate the necessary credentials. You can follow these steps in order to generate a **client id** and **client secret**:
@@ -39,4 +39,4 @@ Make sure you install the following dependencies and create a Spotify Developer 
 ```
 ### Examples
 
-![picture alt](./images/examples.png "Example of all 3 commands")
+![Example of all 3 commands](./images/examples.png)
