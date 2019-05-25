@@ -15,7 +15,6 @@ Navigate to your app and simply enter one of the following commands into the com
 
 Make sure you install the following dependencies and create a Spotify Developer account.
 
-```
 <details> 
     <summary>[node-spotify-api](https://www.npmjs.com/package/node-spotify-api)</summary>
 
@@ -36,7 +35,6 @@ Make sure you install the following dependencies and create a Spotify Developer 
 
 * [DotEnv](https://www.npmjs.com/package/dotenv)
 
-```
 ### Examples
 
 ![Example of all 3 commands](./images/examples.png)
