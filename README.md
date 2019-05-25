@@ -14,7 +14,14 @@ Navigate to your app and simply enter one of the following commands into the com
 ### Prerequisites
 
 Make sure you install the following dependencies and create a Spotify Developer account.
-*[node-spotify-api](https://www.npmjs.com/package/node-spotify-api)
+
+* [node-spotify-api](https://www.npmjs.com/package/node-spotify-api)
+
+* [Axios](https://www.npmjs.com/package/axios)
+
+* [Moment](https://www.npmjs.com/package/moment)
+
+* [DotEnv](https://www.npmjs.com/package/dotenv)
 
 <details> 
     <summary>How to get Spotify Keys</summary>
@@ -29,12 +36,6 @@ Make sure you install the following dependencies and create a Spotify Developer 
 
    4. Step Four: On the next screen, scroll down to where you see your client id and client secret. Copy these values down somewhere, you'll need them to use the Spotify API and the [node-spotify-api package](https://www.npmjs.com/package/node-spotify-api).</p>
 </details>
-
-* [Axios](https://www.npmjs.com/package/axios)
-
-* [Moment](https://www.npmjs.com/package/moment)
-
-* [DotEnv](https://www.npmjs.com/package/dotenv)
 
 ### Examples
 
