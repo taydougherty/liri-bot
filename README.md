@@ -14,19 +14,20 @@ Navigate to your app and simply enter one of the following commands into the com
 ### Prerequisites
 
 Make sure you install the following dependencies and create a Spotify Developer account.
+*[node-spotify-api](https://www.npmjs.com/package/node-spotify-api)
 
 <details> 
-    <summary>[node-spotify-api](https://www.npmjs.com/package/node-spotify-api)</summary>
+    <summary>How to get Spotify Keys</summary>
 
-   <p>* The Spotify API requires you sign up as a developer to generate the necessary credentials. You can follow these steps in order to generate a **client id** and **client secret**:
+   <p>The Spotify API requires you sign up as a developer to generate the necessary credentials. You can follow these steps in order to generate a **client id** and **client secret**:
 
-   * Step One: Visit <https://developer.spotify.com/my-applications/#!/>
+   1. Step One: Visit <https://developer.spotify.com/my-applications/#!/>
 
-   * Step Two: Either login to your existing Spotify account or create a new one (a free account is fine) and log in.
+   2. Step Two: Either login to your existing Spotify account or create a new one (a free account is fine) and log in.
 
-   * Step Three: Once logged in, navigate to <https://developer.spotify.com/my-applications/#!/applications/create> to register a new application to be used with the Spotify API. You can fill in whatever you'd like for these fields. When finished, click the "complete" button.
+   3. Step Three: Once logged in, navigate to <https://developer.spotify.com/my-applications/#!/applications/create> to register a new application to be used with the Spotify API. You can fill in whatever you'd like for these fields. When finished, click the "complete" button.
 
-   * Step Four: On the next screen, scroll down to where you see your client id and client secret. Copy these values down somewhere, you'll need them to use the Spotify API and the [node-spotify-api package](https://www.npmjs.com/package/node-spotify-api).</p>
+   4. Step Four: On the next screen, scroll down to where you see your client id and client secret. Copy these values down somewhere, you'll need them to use the Spotify API and the [node-spotify-api package](https://www.npmjs.com/package/node-spotify-api).</p>
 </details>
 
 * [Axios](https://www.npmjs.com/package/axios)
