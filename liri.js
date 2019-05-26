@@ -32,6 +32,7 @@ function bandSearch() {
     console.log(printLocation);
     console.log(printDate);
 
+// append user sourced data to log.txt file
     fs.appendFile("log.txt", (printVenue + printLocation + printDate), function(err) {
         if (err) {
           console.log(err);
@@ -67,6 +68,7 @@ function songSearch() {
     console.log(printLink);
     console.log(printAlbum);
 
+// append user sourced data to log.txt file
     fs.appendFile("log.txt", (printArtist + printSong + printLink + printAlbum), function(err) {
         if (err) {
           console.log(err);
@@ -116,6 +118,7 @@ function movieSearch() {
         console.log(printPlot);
         console.log(printActors);
 
+// append user sourced data to log.txt file
         fs.appendFile("log.txt", (printTitle + printYear + printImdb + printRt + printCountry + printLanguage + printPlot + printActors), function(err) {
             if (err) {
               console.log(err);
