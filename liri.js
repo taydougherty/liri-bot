@@ -24,9 +24,21 @@ function bandSearch() {
     var date = response.data[0].datetime;
     var momentDate = moment(date);
 
-    console.log(artist + " will play the " + venue + ".");
-    console.log("The " + venue + " is located in " + venueLocation + ".");
-    console.log("The date of the concert is " + momentDate.format("MM/DD/YYYY") + ".");
+    var printVenue = ("\nThe artist " + artist + " will play the " + venue + ".");
+    var printLocation = ("\nThe " + venue + " is located in " + venueLocation + ".");
+    var printDate = ("\nThe date of the concert is " + momentDate.format("MM/DD/YYYY") + ".");
+
+    console.log(printVenue);
+    console.log(printLocation);
+    console.log(printDate);
+
+    fs.appendFile("log.txt", (printVenue + printLocation + printDate), function(err) {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log("Content Added!");
+        }
+      });
   })
   .catch(function(error) {
     console.log(error);
@@ -45,10 +57,23 @@ function songSearch() {
     var link = data.external_urls.spotify;
     var album = data.album.name;
 
-    console.log(songName + " is sung by " + artist + ".");
-    console.log("The song name is " + songName + ".");
-    console.log("This is the link to the song: " + link + ".");
-    console.log(songName + " is on the " + album + " album.");
+    var printArtist = ("\nThe song " + songName + " is sung by " + artist + ".");
+    var printSong = ("\nThe song name is " + songName + ".");
+    var printLink = ("\nThis is the link to the song: " + link + ".");
+    var printAlbum = ("\nThe song " + songName + " is on the " + album + " album.");
+
+    console.log(printArtist);
+    console.log(printSong);
+    console.log(printLink);
+    console.log(printAlbum);
+
+    fs.appendFile("log.txt", (printArtist + printSong + printLink + printAlbum), function(err) {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log("Content Added!");
+        }
+      });
   })
   .catch(function(err) {
     console.log(err);
@@ -73,14 +98,31 @@ function movieSearch() {
         var plot = info.Plot;
         var actors = info.Actors;
 
-        console.log("The movie is called " + movieTitle + ".");
-        console.log(movieTitle + " came out in the year " + movieYear + ".");
-        console.log("The IMDB rating of " + movieTitle + " is: " + imdbRating + ".");
-        console.log("The Rotten Tomatoes rating of " + movieTitle + " is: " + rtRating + ".");
-        console.log(movieTitle + " was produced in " + country + ".");
-        console.log(movieTitle + " is in " + language + ".");
-        console.log("The plot of " + movieTitle + " is: " + plot);
-        console.log("The actors in " + movieTitle + " are: " + actors + ".");
+        var printTitle = ("\nThe movie is called " + movieTitle + ".");
+        var printYear = ("\nThe movie " +  movieTitle + " came out in the year " + movieYear + ".");
+        var printImdb = ("\nThe IMDB rating of " + movieTitle + " is: " + imdbRating + ".");
+        var printRt = ("\nThe Rotten Tomatoes rating of " + movieTitle + " is: " + rtRating + ".");
+        var printCountry = ("\nThe movie " + movieTitle + " was produced in " + country + ".");
+        var printLanguage = ("\nThe movie " + movieTitle + " is in " + language + ".");
+        var printPlot = ("\nThe plot of " + movieTitle + " is: " + plot);
+        var printActors = ("\nThe actors in " + movieTitle + " are: " + actors + ".");
+
+        console.log(printTitle);
+        console.log(printYear);
+        console.log(printImdb);
+        console.log(printRt);
+        console.log(printCountry);
+        console.log(printLanguage);
+        console.log(printPlot);
+        console.log(printActors);
+
+        fs.appendFile("log.txt", (printTitle + printYear + printImdb + printRt + printCountry + printLanguage + printPlot + printActors), function(err) {
+            if (err) {
+              console.log(err);
+            } else {
+              console.log("Content Added!");
+            }
+          });
     })
     .catch(function(error) {
       console.log(error);
@@ -89,7 +131,7 @@ function movieSearch() {
 
 // read the data from an external file and perform the command
 function readFile() {
-    fs.readFile("./random.txt", "utf8", function(error, data) {
+    fs.readFile("random.txt", "utf8", function(error, data) {
     if (error) {
         return console.log(error);
     }
@@ -128,4 +170,3 @@ if(dataCommand === "concert-this"){
 } else if(dataCommand === "do-what-it-says"){
     readFile();
 }
-
