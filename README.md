@@ -36,3 +36,7 @@ Make sure you install the following dependencies and create a Spotify Developer 
 
    4. Step Four: On the next screen, scroll down to where you see your client id and client secret. Copy these values down somewhere, you'll need them to use the Spotify API and the [node-spotify-api package](https://www.npmjs.com/package/node-spotify-api).</p>
 </details>
+
+### Examples
+
+![examples](https://user-images.githubusercontent.com/45830707/58387265-d7a6ec00-7fc0-11e9-9be7-af49d03c77a2.PNG)
