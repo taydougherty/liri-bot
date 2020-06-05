@@ -1,4 +1,4 @@
-# LIRI Bot
+# :robot: LIRI Bot
 
 LIRI Bot is a SIRI competitor, allowing users to input commands into their terminal and receive valuable results!
 
